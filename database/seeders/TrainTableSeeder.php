@@ -16,6 +16,6 @@ class TrainTableSeeder extends Seeder
      */
     public function run()
     {
-        Train::factory()->count(15)->create();
+        Train::factory()->count(20)->create();
     }
 }
