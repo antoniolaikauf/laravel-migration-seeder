@@ -11,9 +11,11 @@ return new class extends Migration
      *
      * @return void
      */
+    // il metodo up carica le modifiche e le colonne che si è creato 
     public function up()
     {
         Schema::create('trains', function (Blueprint $table) {
+            // numero di colonne e di che tipo sono 
             $table->id();
 
             $table->string('azienda', 20);
@@ -35,6 +37,7 @@ return new class extends Migration
      *
      * @return void
      */
+    // il metodo down elimina le modifiche che hai creato con il metodo up 
     public function down()
     {
         Schema::dropIfExists('trains');

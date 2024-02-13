@@ -16,6 +16,7 @@ class TrainFactory extends Factory
      */
     public function definition()
     {
+        // nelle train factori mettere le fake che aggiungono i dati randomici , e questi dati si riferiscono alle colonne create nel migration create_trains_table
         return [
             'azienda' => fake()->word(),
             'stazione_di_partenza' => fake()->word(),

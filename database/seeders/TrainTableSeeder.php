@@ -15,6 +15,7 @@ class TrainTableSeeder extends Seeder
      * @return void
      */
     public function run()
+    // quante row ci devono essere nella colonna 
     {
         Train::factory()->count(20)->create();
     }
