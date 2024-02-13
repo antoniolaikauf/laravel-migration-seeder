@@ -22,8 +22,8 @@ class TrainFactory extends Factory
             'stazione_di_arrivo'=> fake() ->word() ,
             'orario_di_partenza'=> fake() ->time() ,
             'orario_di_arrivo'=> fake() ->time() ,
-            'codice_treno'=> fake() -> regexify('[A-Z]{3}[0-4]{3}'),
-            'numero_carrozze'=> fake() -> numberBetween(0, 20) ,
+            'codice_treno'=> fake() -> regexify('[A-Z]{3}[0-9]{3}'),
+            'numero_carrozze'=> fake() -> numberBetween(1, 20) ,
             'in_orario'=> fake() -> boolean() ,
             'cancellato'=> fake() -> boolean() ,
         ];
