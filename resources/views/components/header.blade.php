@@ -1,3 +1,3 @@
 <header>
-    <h1>Hello from Header</h1>
+    <h1> treni in partenza {{count($train)}}</h1>
 </header>
